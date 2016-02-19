@@ -1,13 +1,13 @@
 ## This file creates the plots for Week 1 Quiz
 
-setwd('/Users/ralphmastromonaco/Documents/Coursera/DataScience/exploring/')
+setwd('/Users/ralphmastro/Documents/Coursera/DataScience/exploring/')
 
 data <- read.table(file = 'household_power_consumption copy.txt', sep = ";",
                    stringsAsFactors = FALSE, header = TRUE )
 
 data <- data[data$Date == "1/2/2007" | data$Date == '2/2/2007',]
 
-setwd('/Users/ralphmastromonaco/Documents/Coursera/DataScience/exploring/ExData_plotting1/')
+setwd('/Users/ralphmastro/Documents/Coursera/DataScience/exploring/ExData_plotting1/')
 
 # Fix the time/date variables
 data$datetime <- paste(data$Date, data$Time, sep = ' ')
